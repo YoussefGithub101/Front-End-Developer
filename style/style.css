@@ -28,9 +28,14 @@ nav ul {
     gap: 1rem;
     flex-wrap: wrap;
 }
-nav li:not(:last-child)::after{
+nav li:not(:first-child)::before{
     content: "/";
-    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+nav ul li:hover{
+    cursor: pointer;
+    color: #000;
+    font-weight: 600;
 }
 
 .active_link{
