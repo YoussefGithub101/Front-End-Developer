@@ -46,7 +46,7 @@ nav li:not(:last-child)::after{
 }
 .product-gallery {
      
-    width: 100%; /* Ensures it takes the full grid column width */
+    width: 100%; 
 }
 .product-details { 
     padding: 1.25rem;
@@ -57,9 +57,9 @@ nav li:not(:last-child)::after{
 
 
 .main-image {
-    width: 100%; /* Makes the image fill div1 */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Removes unwanted space below the image */
+    width: 100%; 
+    height: auto; 
+    display: block; 
     border-radius: 10px;
 
 }
@@ -77,12 +77,12 @@ nav li:not(:last-child)::after{
     background: white;
     border-radius: 50%;
     border: none;
-    display: flex; /* Ensures the icon is centered */
-    align-items: center; /* Vertically center icon */
-    justify-content: center; /* Horizontally center icon */
-    cursor: pointer; /* Makes it more interactive */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds slight elevation */
-    transition: background 0.3s ease, transform 0.2s ease; /* Smooth effects */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 /* Positioning */
@@ -94,17 +94,14 @@ nav li:not(:last-child)::after{
     right: 16px;
 }
 
-/* Improve button hover effect */
+
 .back:hover,
 .next:hover {
     background: #f0f0f0;
-    transform: translateY(-50%) scale(1.1); /* Slightly enlarges on hover */
+    transform: translateY(-50%) scale(1.1); 
 }
 
-/* Ensures SVG is centered properly without extra margin */
  
-
-
 .thumbnails {
         margin-top: 15px;
         display: grid;
@@ -281,7 +278,6 @@ line-height: 0.99375rem;
         margin: 1.20rem;
     }
     .main_container {
-      /*  background-color: rgba(255, 0, 0, 0.422); */
        display: grid;
        grid-template-columns: 1fr;
        grid-template-rows: repeat(2, 1fr);
