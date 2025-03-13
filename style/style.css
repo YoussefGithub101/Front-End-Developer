@@ -1,0 +1,330 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+body {
+    background-color: #f8f8f8;
+    margin: 1.20rem;
+ 
+}
+
+nav {
+    
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+nav li:not(:last-child)::after{
+    content: "/";
+    margin-left: 0.5rem;
+}
+
+.active_link{
+    color: #000;
+    font-weight: 600;
+}
+
+.main_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1.69rem;
+}
+.product-gallery {
+     
+    width: 100%; /* Ensures it takes the full grid column width */
+}
+.product-details { 
+    padding: 1.25rem;
+    border: 1px rgba(173, 172, 172, 0.236) solid;
+    border-radius: 1rem;
+}
+
+
+
+.main-image {
+    width: 100%; /* Makes the image fill div1 */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes unwanted space below the image */
+    border-radius: 10px;
+
+}
+
+.slider{
+    position: relative;
+}
+
+.back, .next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 50%;
+    border: none;
+    display: flex; /* Ensures the icon is centered */
+    align-items: center; /* Vertically center icon */
+    justify-content: center; /* Horizontally center icon */
+    cursor: pointer; /* Makes it more interactive */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds slight elevation */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth effects */
+}
+
+/* Positioning */
+.back {
+    left: 16px;
+}
+
+.next {
+    right: 16px;
+}
+
+/* Improve button hover effect */
+.back:hover,
+.next:hover {
+    background: #f0f0f0;
+    transform: translateY(-50%) scale(1.1); /* Slightly enlarges on hover */
+}
+
+/* Ensures SVG is centered properly without extra margin */
+ 
+
+
+.thumbnails {
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 0.5fr;
+        grid-column-gap: 15px;
+        grid-row-gap: 10px;
+         
+}
+
+.thumbnails img {
+    width: 100%; 
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+}
+.NamesAndDis{
+    display: flex;
+    flex-direction: column;
+    gap:1.75rem;
+}
+.product__Name{
+  margin-top: 1.75rem;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.overview{
+    color: #29292a;
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+.dis{
+    color: #343434;
+    opacity: 0.5;
+font-family: Inter;
+font-size: 0.7375rem;
+font-style: normal;
+font-weight: 400;
+line-height: 0.99375rem;
+}
+
+
+.details p {
+    font-weight: 600;
+    color: gray;
+}
+
+.details p span {
+    color: black;
+}
+
+.likeShare{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.likeShare_icon img{
+    cursor: pointer;
+}
+
+.details > *{
+    margin-top: 0.81rem;
+}
+.old_price{
+    margin-left: 1rem;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.discount{
+    margin-left: 1rem;
+    color: green;
+    font-weight: 600;
+    background-color: #4cfb2039;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}
+
+.add_prodcut{
+    margin: 2rem 0rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #FBEEDE;
+    background: #e8e7e7;
+}
+.checkout_counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+    border: 1px rgba(173, 172, 172, 0.764) solid;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 0.4rem 1rem;
+}
+.delete ,.add{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+ .checkout{
+    margin-top: 10px;
+    width: 100%;
+    padding: 0.5rem 0rem;
+    text-align: center;
+    border-radius: 0.7rem;
+    border: 1px solid #C79059;
+    background: #CC7F31;
+    color: #fff;
+    cursor: pointer;
+ }
+ .checkout:hover{
+    background: #b96e22;
+ }
+ .info{
+    margin-top: 0.8rem;
+    list-style:none;
+ }
+ .info li{
+    margin-top: 0.3rem;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ }
+
+ .Call_Us{
+    margin-top: 25px;
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     width: 100%;
+     border-radius: 15px;
+     border: 0.5px solid #caced42e;    
+     background: #ebedf2;
+     cursor: pointer;
+     transition: transform 0.3s ease-in-out;
+ }
+ .Call_Us:hover {
+    transform: translateX(8px);
+    background: #e3e5eb;
+}
+
+ .Call_Us > p{
+    color: #000000;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+ }
+
+
+ /*  Tablet Responsive */
+@media (max-width: 991px) {
+    body {
+        margin: 1.20rem 0rem;
+    }
+    nav{
+        margin: 1.20rem;
+    }
+    .main_container {
+      /*  background-color: rgba(255, 0, 0, 0.422); */
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(2, 1fr);
+       grid-row-gap: 1.69rem;
+       justify-content: center;
+    }
+    .main-image{
+        border-radius: 0px;
+    }
+    .product-details{
+        border-radius: 0;
+    }
+    .NamesAndDis{
+        margin: auto 1.20rem;
+        gap:1rem;
+    }
+    .product__Name{
+      font-size: 1.8rem;
+      }
+      
+      .overview{
+          font-size: 1.5rem;
+      
+      }
+      .dis{
+      font-size: 0.9rem;
+      }
+      
+}
+
+/*  Mobile Responsive */
+@media (max-width: 767px) {
+    .main_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 0.5fr);
+        grid-row-gap: 1.69rem;
+        justify-content: center;
+    }
+
+    .back, .next {
+        width: 30px;
+        height: 30px;
+    
+    }
+}
